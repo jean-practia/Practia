@@ -195,6 +195,7 @@ def main():
         else:
             print('erro!')
     except Exception as e:
+        print('erro de execução: ')
         print(e)
     finally:
         print('Finalizado')

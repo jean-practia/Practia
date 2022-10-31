@@ -18,6 +18,7 @@ def atualiza_dados():
         xlapp.DisplayAlerts = False
         wb.Save()
         print("Sucesso!")
+        print("Relatório atualizado")
         sucesso = True
     except Exception as e:
         print('Error:')
