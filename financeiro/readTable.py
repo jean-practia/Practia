@@ -10,7 +10,7 @@ data_atual =datetime.today()
 lista_colaboradores = []
 lista_projeto = []
 
-mes_atual_int = data_atual.month
+mes_atual_int = data_atual.month 
 ano_atual = data_atual.year
 tabela = ''
 mesString = mes_string()
@@ -132,9 +132,10 @@ def filtra_tabela(tabela):
     return segundo
 
 def filtra_ano_mes(tabela):
-
-    tabela = tabela.loc[tabela['Atividade']==ano_atual,['Atividade','Mes','Title','Cliente','HorasFeita']]
-    tabela = tabela.loc[tabela['Mes']==mesString,['Atividade','Mes','Title','Cliente','HorasFeita']]
+    concluido = 'Fazendo' # status (Fazendo) ou (Concluído)
+    tabela = tabela.loc[tabela['Atividade']==ano_atual,['Atividade','Mes','Title','Cliente','HorasFeita','concluido']]
+    tabela = tabela.loc[tabela['Mes']==mesString,['Atividade','Mes','Title','Cliente','HorasFeita','concluido']]
+    tabela = tabela.loc[tabela['concluido']==concluido,['Atividade','Mes','Title','Cliente','HorasFeita']]
     return tabela
     
 
@@ -194,6 +195,7 @@ def main():
         else:
             print('erro!')
     except Exception as e:
+        print('erro de execução: ')
         print(e)
     finally:
         print('Finalizado')
