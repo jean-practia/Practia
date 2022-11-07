@@ -1,14 +1,16 @@
 [
     {
-    "IdCalendario":"",
-    "start_time":"",
-    "end_time":"",
-    "title":""
+        "IdCalendario":"",
+        "start_time":"",
+        "end_time":"",
+        "title":""
     },
     {
         "IdCalendario":"",
         "start_time":"",
         "end_time":"",
-        "title":""
+        "title":"",
+        "new_start_time":"",
+        "new_end_time":""
     }
 ]
