@@ -1,2 +1,12 @@
-Default: 197,217,241
-Gestão e ajuda Pontual: 0,176,240
+Tr.Green Belt :252,213,180
+Coaching: 0,176,80
+Tollgate: 217,217,217
+Treinamento Gestores LSS: 166,166,166
+RAI:0,0,0
+Treinamento Kanban: 0,255,0
+Tr./Workshop Champion: 150,54,52
+Trilha Ágil (Kaizen Sprint): 196,215,155
+Workshop: 255,0,0
+Pré-Tollgate: 192,0,0 
+Kaizen: 255,0,255
+Diagnóstico: 0,112,192
